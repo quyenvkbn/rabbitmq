@@ -1,0 +1,1 @@
+Header exchange sẽ dùng các thuộc tính header của message để định tuyến message đến queue

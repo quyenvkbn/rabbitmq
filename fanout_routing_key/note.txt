@@ -1,0 +1,1 @@
+Exchange fanout => Đẩy message đến tất cả các queue mà nó binding

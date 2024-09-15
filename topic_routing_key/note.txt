@@ -1,0 +1,6 @@
+Topic exchange định tuyến message tới một hoặc nhiều queue dựa trên sự trùng khớp giữa routing key và pattern
+VD pattern: "demo.*.#"
+Các từ hợp lệ VD: demo.e, demo.e.e
+1. ( * ) có nghĩa là chính xác một từ được phép
+2. ( # ) có nghĩa là số lượng từ được phép bằng không hoặc nhiều hơn
+3. ( . ) Có nghĩa là dấu phân cách từ

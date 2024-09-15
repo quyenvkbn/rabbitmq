@@ -1,0 +1,9 @@
+Hiểu đơn giản quá trình xử lý 1 message như sau:
+1. Nhận message
+2. Kiểm tra message thuộc loại exchange nào 
+3. Tiến hành binding message đó đến queue nơi lưu trữ message (Xác định bằng loại exchange và routing key, pattern nếu có)
+4. Nhân message (Comsumer)
+
+Lưu ý: Tùy theo loại exchange và routing key, pattern 1 message có thể gửi đến nhiều queue
+
+Gửi message -> Kiểm tra Loại exchnage -> Tiến hành binding message đến queue -> Lưu trữ message(queue) -> Nhân message(comsumer)

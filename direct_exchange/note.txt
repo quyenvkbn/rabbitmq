@@ -1,0 +1,1 @@
+Direct exchnage đẩy message đến queue dựa vào routing key

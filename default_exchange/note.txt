@@ -1,0 +1,3 @@
+Default exchange bản chất là một Direct exchange nhưng không có tên (string rỗng)
+Default exchnage không cần đặt routing key vì mọi queue được tạo ra sẽ tự động liên kết với nó bằng một routing key giống tên queue.
+Ví dụ, nếu bạn tạo ra 1 queue với tên "hello-world", RabbitMQ broker sẽ tự động binding default exchange đến queue "hello-word" với routing key "hello-world"

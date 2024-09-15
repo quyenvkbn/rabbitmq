@@ -1,0 +1,5 @@
+RPC(Remote Procedure Call) queue hoạt động như sau:
+1. Client request bao gồm message, reply_to queue và correlation ID(Correlation ID dùng để xác định request tương ứng với response nào)
+2. Server nhận request và xử lý(Xử lý ở đây thường sẽ là cho vào job xử lý)
+3. Sau khi xử lý xong sẽ gửi result cho client thông qua reply_to queue và có bao gồm correlation ID
+4. CLient thì lắng nghe reply_to queue nhận kết quả trong kết quả có bao gồm correlation ID từ đó biết được kết quả đó trả về cho request nào.
